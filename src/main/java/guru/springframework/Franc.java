@@ -6,15 +6,15 @@ package guru.springframework;
  * <p>
  * Creation date: 2021-04-17
  */
-public class Dollar {
+public class Franc {
     private int amount;
 
-    public Dollar(int amount) {
+    public Franc(int amount) {
         this.amount = amount;
     }
 
-    Dollar times(int multiplier) {
-        return new Dollar(amount * multiplier);
+    Franc times(int multiplier) {
+        return new Franc(amount * multiplier);
     }
 
     @Override
@@ -24,7 +24,7 @@ public class Dollar {
 
     @Override
     public boolean equals(Object obj) {
-        Dollar dollar = (Dollar) obj;
-        return dollar.amount == amount;
+        Franc franc = (Franc) obj;
+        return franc.amount == amount;
     }
 }
